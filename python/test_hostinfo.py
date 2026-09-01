@@ -40,7 +40,7 @@ class TestHostInfoServer(unittest.TestCase):
         mock_get_host_info.return_value = test_host_info
         
         # Create output buffer to capture written data
-      buffer = BytesIO()
+        buffer = BytesIO()
         
         # Create a testing subclass that captures responses
         class TestHandler(SimpleHTTPRequestHandler):
