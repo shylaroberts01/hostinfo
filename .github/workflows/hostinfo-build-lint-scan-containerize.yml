@@ -95,6 +95,9 @@ jobs:
           load: true
           push: false
           tags: student/hostinfo:latest
+          
+      - name: Set up Trivy
+        uses: aquasecurity/setup-trivy@v0.1.0
 
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@v0.28.0
